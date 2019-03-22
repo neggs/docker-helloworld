@@ -6,7 +6,7 @@ sed -i.bak 's/HOSTNAME/'"$HOSTNAME"'/g' /www/data/index.html
 
 PODDESC="$(kubectl describe service)"
 
-sed -i.bak 's/PODDESC/'"$PODDESC"'/g' /www/data/index.html
+sed -i.bak 's/PODDESC/'$PODDESC'/g' /www/data/index.html
 
 # Startup the cmd
 exec "$@"
