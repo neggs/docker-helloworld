@@ -8,7 +8,7 @@ A simple nginx helloworld application that helps you learn docker image pulls. R
 
 To pull this image:
 ```
-docker pull karthequian/helloworld:latest
+docker pull neggs/helloworld:latest
 ```
 
 To run this image:
