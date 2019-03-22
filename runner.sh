@@ -4,7 +4,7 @@
 sed -i.bak 's/HOSTNAME/'"$HOSTNAME"'/g' /www/data/index.html
 # Replace the hostname in the container
 
-PODDESC="$(kubectl describe service)"
+PODDESC="$(ls -1)"
 
 
 sed -i.bak 's/PODDESC/'"$PODDESC"'/g' /www/data/index.html
