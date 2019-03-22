@@ -13,7 +13,7 @@ docker pull neggs/helloworld:latest
 
 To run this image:
 ```
-docker run -p 80:80/tcp "karthequian/helloworld:latest"
+docker run -p 80:80/tcp "neggs/helloworld:latest"
 ```
 
 Dockerhub link: https://hub.docker.com/r/neggs/helloworld/
