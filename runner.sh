@@ -4,9 +4,9 @@
 sed -i.bak 's/HOSTNAME/'"$HOSTNAME"'/g' /www/data/index.html
 # Replace the hostname in the container
 
-PODDESC="$(kubectl describe service)"
+PODRELEASE="Blue-20190325-01"
 
-sed -i.bak 's/PODDESC/'$PODDESC'/g' /www/data/index.html
+sed -i.bak 's/PODRELEASE/'$PODRELEASE'/g' /www/data/index.html
 
 # Startup the cmd
 exec "$@"
