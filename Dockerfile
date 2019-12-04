@@ -5,7 +5,7 @@
 
 
 # Set the base image to Ubuntu
-FROM armbuild/ubuntu
+FROM resin/rpi-raspbian:latest
 
 # File Author / Maintainer
 MAINTAINER Karthik Gaekwad
