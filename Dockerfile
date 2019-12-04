@@ -5,7 +5,7 @@
 
 
 # Set the base image to Ubuntu
-FROM ubuntu
+FROM armbuild:ubuntu
 
 # File Author / Maintainer
 MAINTAINER Karthik Gaekwad
