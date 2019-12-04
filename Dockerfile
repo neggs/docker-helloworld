@@ -5,7 +5,7 @@
 
 
 # Set the base image to Ubuntu
-FROM docker.io/project31/aarch64-alpine-qemu:3.5
+FROM docker.io/project31/aarch64-alpine-qemu:3.5-7
 RUN [ “cross-build-start” ]
 
 # File Author / Maintainer
