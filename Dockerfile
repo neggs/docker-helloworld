@@ -5,7 +5,8 @@
 
 
 # Set the base image to Ubuntu
-FROM resin/rpi-raspbian:latest
+FROM docker.io/project31/aarch64-alpine-qemu:3.5
+RUN [ “cross-build-start” ]
 
 # File Author / Maintainer
 MAINTAINER Karthik Gaekwad
@@ -49,3 +50,5 @@ ENTRYPOINT ["/runner.sh"]
 # Set the default command to execute
 # when creating a new container
 CMD ["nginx"]
+
+RUN [ “cross-build-end” ]
